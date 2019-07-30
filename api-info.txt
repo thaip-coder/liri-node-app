@@ -1,0 +1,16 @@
+http://www.omdbapi.com/apikey.aspx?VERIFYKEY=64abe8c7-92ee-4eeb-9bc4-a92129302b48
+
+omdb api key: 64abe8c7-92ee-4eeb-9bc4-a92129302b48
+
+http://www.omdbapi.com/?i=tt3896198&apikey=b57d58f6
+
+--------------------------------------------------------
+
+rest.bandsintown.com
+
+--------------------------------------------------------
+
+https://api.spotify.com
+
+Client ID 7942995130364024adadfcb682e3d213
+Client Secret 83b0bc0645274aef8034dbba96fef606 
