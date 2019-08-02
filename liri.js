@@ -16,10 +16,6 @@ var moment = require("moment");
 
 var command = process.argv[2];
 
-var recordArray = process.argv.slice(3);
-
-var search = recordArray.join(" ");
-
 console.log(result)
 /* ---------- Command switch statements ---------- */
 switch(command) {
