@@ -16,7 +16,8 @@ var moment = require("moment");
 
 var command = process.argv[2];
 
-console.log(result)
+var search = process.argv[3];
+
 /* ---------- Command switch statements ---------- */
 switch(command) {
     case "spotify-this-song":
@@ -65,13 +66,14 @@ switch(command) {
 /* ---------- Action Functions ---------- */
 //Song, artist, song album, link of spotify song
 function spotifySong() {
-    spotify.search({type: "track", query: search, limit: 1}, function(err, result) {
+    spotify.search({type: "track", query: search, limit: 1}, function(err, results) {
         if(err) {
             console.log("Error: " + err);
             return;
         };
-        console.log("\nSpotify Song")
-        console.log()
+        console.log(results);
+        //console.log("\nSpotify Song")
+        //console.log()
     })
 };
 
@@ -85,7 +87,7 @@ function movieThis() {
         console.log("Country/Countries Shot In: " + response.data.Country);
         console.log("Languages: " + response.data.Language);
         console.log("Plot: " + response.data.Plot);
-        console.log("Actors: " + response.data.Actors);
+        console.log("Actors: " + response.datad.Actors);
     });
 };
 
