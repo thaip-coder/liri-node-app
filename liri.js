@@ -2,9 +2,9 @@
 require("dotenv").config();
 
 /* ---------- Global Variables ---------- */
-var keys = require("./keys.js");
-
 var fs = require("fs");
+
+var keys = require("./keys.js");
 
 var Spotify = require("node-spotify-api");
 
@@ -74,7 +74,7 @@ function spotifySong() {
         console.log(results);
         //console.log("\nSpotify Song")
         //console.log()
-    })
+    });
 };
 
 //Title, Year, IMBD rating, Rotten Tomatoes Rating, Country Produced, Language, Plot, Actors
