@@ -24,12 +24,10 @@ switch(command) {
         spotifySong();
         break;
     case "movie-this":
-        search = search.split(" ").join("+");
         movieURL = "http://www.omdbapi.com/?apikey=trilogy&t="+search+"&plot=short";
         movieThis();
         break;
     case "concert-this":
-        search = search.split(" ").join("+");
         concertURL = "https://rest.bandsintown.com/artists/"+search+"/events?app_id=codingbootcamp";
         concertThis();
         break;
@@ -49,12 +47,10 @@ switch(command) {
                 spotifySearch();
                 break;
             case "movie-this":
-                search = search.split(" ").join("+");
                 movieURL = "http://www.omdbapi.com/?apikey=trilogy&t="+search+"&plot=short";
                 movieThis();
                 break;
             case "concert-this":
-                search = search.split(" ").join("+");
                 concertURL = "https://rest.bandsintown.com/artists/"+search+"/events?app_id=codingbootcamp";
                 concertThis();
                 break;
