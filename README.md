@@ -42,4 +42,6 @@
         - do-what-it-says
             - Hit enter, and it will run whatever command is in the random.txt file.
 
-4. 
+4. Images of code working will be provided in images folder
+
+5. 
