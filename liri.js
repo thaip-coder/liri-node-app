@@ -13,17 +13,21 @@ var search = process.argv[3];
 
 /* ---------- Command switch statements ---------- */
 switch(command) {
+    //Spotify command that calls spotifySong function
     case "spotify-this-song":
         spotifySong();
         break;
+    //Movie command that calls movieThis function
     case "movie-this":
         movieURL = "http://www.omdbapi.com/?apikey=trilogy&t="+search+"&plot=short";
         movieThis();
         break;
+    //Concert command that calls concertThis function
     case "concert-this":
         concertURL = "https://rest.bandsintown.com/artists/"+search+"/events?app_id=codingbootcamp";
         concertThis();
         break;
+    //Command that reads from random.txt file
     case "do-what-it-says":
         fs.readFile("random.txt", "utf8", (err, data) => {
             if(err) {
@@ -35,6 +39,7 @@ switch(command) {
             var dataRecord = data.split(",");
             search = dataRecord[1];
 
+            //Same cases traversed when do-what-it-says command is run
             switch (dataRecord[0]) {
                 case "spotify-this-song":
                 spotifySong();
