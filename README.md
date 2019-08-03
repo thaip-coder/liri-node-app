@@ -18,7 +18,7 @@
             - Name of venue
             - Venue location
             - Date of event
-        4. Additionally, my app can import a command from a text file and run that command utilizing the 3 functions provided. 
+        4. Additionally, my app can import a command from a text file and run that command utilizing the either of the 3 functions provided. 
 
 2. How the app is organized:
     - Firstly, the global variables are introduced
@@ -31,16 +31,27 @@
         - "node liri" 
     2. After "liri" hit <space> and insert 1 of 4 commands:
         - spotify-this-song
-            - After this command hit <space> and input the song you wish you search.
+            - After this command hit <space> and input the song you wish you search in quotations.
             - Then hit <enter>.
         - movie-this
-            - After this command hit <space> and input the movie you wish to search.
+            - After this command hit <space> and input the movie you wish to search in quotations.
             - Then hit <enter>.
         - concert-this
-            - After this command hit <space> and input the artist you wish to search.
-            -Then hit <enter>.
+            - After this command hit <space> and input the artist you wish to search in quotations.
+            - Then hit <enter>.
         - do-what-it-says
             - Hit enter, and it will run whatever command is in the random.txt file.
+                - In order to run a command imported from the text file, you must enter the following:
+                    - <command>,"<search>"
+                        - Example: 
+                            - movie-this,"john wick"
+                            - spotify-this-song,"painkiller"
+                            - concerty-this,"maroon 5"
+    3. Example of search command:
+        - node liri movie-this "john wick"
+        - node liri spotify-this-song "painkiller"
+        - node liri concert-this "maroon 5"
+        - node liri do-what-it-says
 
 4. Images of code working will be provided in images folder
 
