@@ -86,6 +86,5 @@ function concertThis() {
         console.log("Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
         console.log("Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY"));
     });
-
 };
 
