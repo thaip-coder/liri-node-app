@@ -53,18 +53,21 @@ switch(command) {
 };
 
 /* ---------- Action Functions ---------- */
-//Song, artist, song album, link of spotify song
+//SpotifySong function: Song, artist, song album, link of spotify song
 function spotifySong() {
     spotify.search({type: "track", query: search, limit: 1}, function(err, results) {
         if(err) {
             console.log("Error: " + err);
             return;
         };
-        console.log(results);
+        console.log("\nSong Name: " + results.tracks.items[0].name);
+        console.log("Artist(s): " + results.tracks.items[0].artists[0].name);
+        console.log("Song Album: " + results.tracks.items[0].album.name);
+        console.log("Song Link: " + results.tracks.items[0].external_urls.spotify);
     });
 };
 
-//Title, Year, IMBD rating, Rotten Tomatoes Rating, Country Produced, Language, Plot, Actors
+//Movie search function: Title, Year, IMBD rating, Rotten Tomatoes Rating, Country Produced, Language, Plot, Actors
 function movieThis() {
     axios.get(movieURL).then(function(response) {
         console.log("\nMovie Title: " + response.data.Title);
@@ -78,13 +81,13 @@ function movieThis() {
     });
 };
 
-//Name of venue, venue location, date of the event
+//Concert search function: Name of venue, venue location, date of the event
 function concertThis() {
     axios.get(concertURL).then(function(response) {
         console.log("\nBand Playing: " + search);
         console.log("Venue Name: " + response.data[0].venue.name);
         console.log("Location: " + response.data[0].venue.city + ", " + response.data[0].venue.country);
         console.log("Date: " + moment(response.data[0].datetime).format("MM/DD/YYYY"));
-    });
+    });                                                                                                                                                 
 };
 
