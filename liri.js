@@ -27,7 +27,7 @@ switch(command) {
         concertURL = "https://rest.bandsintown.com/artists/"+search+"/events?app_id=codingbootcamp";
         concertThis();
         break;
-    //Command that reads from random.txt file
+    //Command that imports and runs commands from random.txt file
     case "do-what-it-says":
         fs.readFile("random.txt", "utf8", (err, data) => {
             if(err) {
