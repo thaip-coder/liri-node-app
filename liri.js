@@ -25,19 +25,19 @@ switch(command) {
         concertThis();
         break;
     case "do-what-it-says":
-        fs.readFile("random.txt", "UTF-8", (err, data) => {
+        fs.readFile("random.txt", "utf8", (err, data) => {
             if(err) {
                 console.log(err);
                 return;
             };
 
+            console.log(data);
             var dataRecord = data.split(",");
-
             search = dataRecord[1];
 
             switch (dataRecord[0]) {
                 case "spotify-this-song":
-                spotifySearch();
+                spotifySong();
                 break;
             case "movie-this":
                 movieURL = "http://www.omdbapi.com/?apikey=trilogy&t="+search+"&plot=short";
