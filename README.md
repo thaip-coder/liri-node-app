@@ -44,4 +44,19 @@
 
 4. Images of code working will be provided in images folder
 
-5. 
+5. Deployed version of the app:
+    - https://tp222.github.io/liri-node-app/
+
+6. The app utilized the following:
+    - dotenv module
+    - node-spotify-api module
+    - axios module
+    - moment module
+    - switch statements
+    - APIs
+        - spotify api
+        - axios calling
+            - omdb api
+            - bandsintown
+
+7. I developed this app as a homework assigment, myself. However I did receive aid from my fellow colleagues. 
