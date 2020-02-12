@@ -56,7 +56,7 @@
 4. Images of code working will be provided in images folder
 
 5. Deployed version of the app:
-    - https://tp222.github.io/liri-node-app/
+    - https://thaip-coder.github.io/liri-node-app/
 
 6. The app utilized the following:
     - dotenv module
