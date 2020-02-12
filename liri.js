@@ -11,7 +11,7 @@ var moment = require("moment");
 var command = process.argv[2];
 var search = process.argv[3];
 
-/* ---------- Command switch statements ---------- */
+/* ---------- Command Switch Statements ---------- */
 switch(command) {
     //Spotify command that calls spotifySong function
     case "spotify-this-song":
